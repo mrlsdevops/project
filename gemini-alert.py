@@ -36,7 +36,7 @@ if first == "-c" and second == "btcusd" and third=="-d":
     "sdev": "1.2"
   }
 }
- print(json.dumps(btcusd));
+ print(f"json.dumps{btcusd}");
 elif first == "-c" and second == "ethusd" and third=="-d":
  ethusd = {
   "timestamp": t1,
@@ -50,6 +50,6 @@ elif first == "-c" and second == "ethusd" and third=="-d":
     "sdev": "1.1"
   }
 }
- print(json.dumps(ethusd));
+ print(f"json.dumps{ethusd}");
 else:
 	print("not the correct parameters")
