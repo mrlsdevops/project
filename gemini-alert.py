@@ -7,10 +7,6 @@ import sys
 import json
 import datetime, time
 
-# url = "https://docs.gemini.com/rest-api"
-# gemini_api_key = "mykey"
-# gemini_api_secret = "1234abcd".encode()
-
 t = datetime.datetime.now()
 print (t.isoformat() , "- AlertingTool - INFO - Parsing args")
 parser = argparse.ArgumentParser()
@@ -18,8 +14,6 @@ print("Runs checks on API \n")
 parser.add_argument("-c", "--currency", help="The currency trading pair, or ALL")
 parser.add_argument("-d", "--deviation", help="percentage threshold for deviation")
 args = parser.parse_args()
-# if args.currency:
-#     print("currency turned on")
 
 first = sys.argv[1]
 second = sys.argv[2]
